@@ -47,6 +47,6 @@ ul.tags li:last-child:after {
 
 @media (min-width: 990px) {
   .post {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 }
