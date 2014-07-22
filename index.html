@@ -10,7 +10,6 @@ layout: default
         {{ post.title }} &#x2192;
       </a>
     </h1>
-
     <span class="post-date">{{ post.date | localize: "%d %B %Y, %A, %H:%M" }} - <a href="{{ post.writer.www }}">{{ post.writer.full_name }}</a></span>
     {{ post.excerpt }}
     {% unless post.tags.empty? %}
