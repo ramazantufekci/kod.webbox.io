@@ -11,7 +11,7 @@ layout: default
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | localize: "%d %B %Y, %A, %H:%M" }}</span>
+    <span class="post-date">{{ post.date | localize: "%d %B %Y, %A, %H:%M" }} - <a href="{{ post.writer.www }}">{{ post.writer.full_name }}</a></span>
     {{ post.excerpt }}
     {% unless post.tags.empty? %}
     <ul class="tags">

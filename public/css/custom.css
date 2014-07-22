@@ -6,6 +6,17 @@
   color: #456fba;
 }
 
+.theme-webbox .post-date a {
+    font-size: .8em;
+}
+
+.theme-webbox .post h1 {
+    color: #456fba;
+}
+.theme-webbox .related h2 {
+    color: #6782dc;
+}
+
 .tag-index h1 {
     color: #6782dc;
 }
