@@ -4,7 +4,7 @@ require "stringex"
 require "date"
 
 $CREDS = false
-if File.exists? "./credentials"
+if File.exists? "./credentials.rb"
   require "./credentials"
   $CREDS = true
 end
