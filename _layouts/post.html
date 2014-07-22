@@ -20,6 +20,13 @@ layout: default
             <small>{{ post.date | localize: "%d %B %Y" }} - {{ post.writer.full_name }}</small>
           </a>
         </h3>
+        {% unless post.tags.empty? %}
+            <p>
+            {% for tag in post.tags %}
+                <a href="/etiket/{{ tag }}/">{{ tag }}</a>
+            {% endfor %}
+            </p>
+        {% endunless %}
       </li>
     {% endfor %}
   </ul>
