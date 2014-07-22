@@ -17,6 +17,10 @@
     color: #6782dc;
 }
 
+.theme-webbox .related-posts small {
+    display: block;
+}
+
 .tag-index h1 {
     color: #6782dc;
 }
