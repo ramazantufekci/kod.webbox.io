@@ -2,6 +2,7 @@ require "bundler/setup"
 require "yaml"
 require "stringex"
 require "date"
+require "./credentials"
 
 task :default => :watch
 
@@ -96,4 +97,13 @@ task :setup do
   puts "Ad, Soyad: #{user_fullname}"
   puts "Web: #{user_www}"
   puts "Artık post yapmaya başlıyabilirsiniz!"
+end
+
+
+desc "Deploy to webBox.io"
+task :deploy do
+  ENV["JEKYLL_ENV"] = "production"
+  system "jekyll build"
+  system "rsync -av _site/ #{DEPLOY_DESTINATION}"
+  puts "Deploy completed..."
 end
