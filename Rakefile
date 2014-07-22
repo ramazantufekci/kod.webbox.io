@@ -2,7 +2,13 @@ require "bundler/setup"
 require "yaml"
 require "stringex"
 require "date"
-require "./credentials"
+
+$CREDS = false
+if File.exists? "./credentials"
+  require "./credentials"
+  $CREDS = true
+end
+
 
 task :default => :watch
 
@@ -44,6 +50,7 @@ task :post, :title do |t, args|
   output = ["---"]
   output << "title: #{title}"
   output << "layout: post"
+  output << "tags: []"
   output << "date: #{Time.now.strftime("%b %d, %Y %H:%M")}"
   output << "published: true"
   output << "writer:"
@@ -102,8 +109,12 @@ end
 
 desc "Deploy to webBox.io"
 task :deploy do
-  ENV["JEKYLL_ENV"] = "production"
-  system "jekyll build"
-  system "rsync -av _site/ #{DEPLOY_DESTINATION}"
-  puts "Deploy completed..."
+  if $CREDS
+    ENV["JEKYLL_ENV"] = "production"
+    system "jekyll build"
+    system "rsync -av _site/ #{DEPLOY_DESTINATION}"
+    puts "Deploy completed..."
+  else
+    puts "You need credentials.rb file..."
+  end
 end
