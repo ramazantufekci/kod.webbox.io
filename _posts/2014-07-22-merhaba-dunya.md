@@ -18,7 +18,7 @@ ister **C++** ister **ASP.net** hiç farketmez!
 Sık kullandığınız, hoşunuza giden kod parcacıklarını bu siteye sizde
 ekleyebilirsiniz!
 
-Örneğin `Ruby` kodu mu eklemek istiyorsunuz? GitHub repo’sunu **fork**
+Örneğin `Ruby` kodu mu eklemek istiyorsunuz? [GitHub][2] repo’sunu **fork**
 edip **pull request** göndermeniz yeterli! Format **Markdown**, yapmanız
 gereken:
 
@@ -35,3 +35,4 @@ puts "Merhaba Dünya"
 şeklinde görüntülenecektir!
 
 [1]: http://webbox.io "webBox.io"
+[2]: https://github.com/webBoxio/kod.webbox.io
