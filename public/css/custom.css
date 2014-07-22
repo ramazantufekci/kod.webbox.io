@@ -1,0 +1,30 @@
+.theme-webbox .masthead {
+  background-color: #234D98;
+}
+.theme-webbox .container a,
+.theme-webbox .related-posts li a:hover {
+  color: #456fba;
+}
+
+.tag-index h1 {
+    color: #6782dc;
+}
+
+ul.tags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.tags li {
+    padding: 0;
+    display: inline;
+    float: left;
+    margin-right: 1em;
+}
+
+@media (min-width: 990px) {
+  .post {
+    margin-bottom: 100px;
+  }
+}

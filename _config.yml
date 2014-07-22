@@ -1,0 +1,11 @@
+exclude: [vendor, Rakefile, Gemfile]
+title: 'Kod'
+tagline: 'İşe yarar kod hileleri'
+description: 'Küçük küçük kod parçacıkları biraya geldi.'
+url: http://kod.webbox.io
+version: 0.1.0
+markdown: redcarpet
+permalink: pretty
+highlighter: pygments
+paginate: 5
+excerpt_separator: <!--more-->
