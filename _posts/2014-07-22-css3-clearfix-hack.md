@@ -14,21 +14,20 @@ Basit bir css3 clearfix hack
 <!--more-->
 Nicolas Gallagher tarafından [yazılmış][1] css3 clearfix hack
 
-	```css
-	.clearfix:before,
-	.clearfix:after {
-	  content: " ";
-	  display: table;
-	}
+```css
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
 
-	.clearfix:after {
-	  clear: both;
-	}
+.clearfix:after {
+  clear: both;
+}
 
-	.clearfix {
-	  *zoom: 1;
-	}
-
-	``
+.clearfix {
+  *zoom: 1;
+}
+```
 
 [1]: http://nicolasgallagher.com/micro-clearfix-hack/
