@@ -112,7 +112,7 @@ task :deploy do
   if $CREDS
     ENV["JEKYLL_ENV"] = "production"
     system "jekyll build"
-    system "rsync -avze _site/ #{DEPLOY_DESTINATION}"
+    system "rsync -av _site/ #{DEPLOY_DESTINATION}"
     puts "Deploy completed..."
   else
     puts "You need credentials.rb file..."
