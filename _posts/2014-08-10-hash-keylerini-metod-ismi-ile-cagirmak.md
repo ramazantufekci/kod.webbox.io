@@ -12,7 +12,7 @@ writer:
 Diyelim ki elinizde bir hash bulunuyor. Ya da sonuç olarak size hash dönen bir metodunuz var.
 
   ```ruby
-    hash = {ad: 'Serdar', soyad: 'Doğruyol'}
+    hash = { ad: 'Serdar', soyad: 'Doğruyol'}
 
     hash.ad # undefined method `ad' for {:ad=>"Serdar", :soyad=>"Doğruyol"}:Hash
 
@@ -23,7 +23,7 @@ Bunu hızlıca çözebiliriz.
 
   ```ruby
     require 'ostruct'
-    hash = {ad: 'Serdar', soyad: 'Doğruyol'}
+    hash = { ad: 'Serdar', soyad: 'Doğruyol'}
     hash = OpenStruct.new hash
     hash.ad # Serdar
   ```
