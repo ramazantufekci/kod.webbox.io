@@ -34,7 +34,7 @@ Bunu hızlıca Hash sınıfını [Monkey Patch](http://en.wikipedia.org/wiki/Mon
     end
 
     hash = {ad: 'Sıtkı', soyad: 'Bağdat'}
-    hash.ad # Serdar
+    hash.ad # Sıtkı
   ```
 
 Bu yöntem OpenStruct kullanmaya göre gayet performanslı ve genel anlamda daha kabul gören bir yol. Öneri için
