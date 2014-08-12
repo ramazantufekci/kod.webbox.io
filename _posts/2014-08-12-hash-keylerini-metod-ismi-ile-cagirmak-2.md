@@ -17,21 +17,28 @@ aynı sonucu alabileceğimizi söyledi.
 Diyelim ki elinizde bir hash bulunuyor. Ya da sonuç olarak size hash dönen bir metodunuz var.
 
   ```ruby
-    hash = {ad: 'Serdar', soyad: 'Doğruyol'}
+    hash = {ad: 'Sıtkı', soyad: 'Bağdat'}
 
-    hash.ad # undefined method `ad' for {:ad=>"Serdar", :soyad=>"Doğruyol"}:Hash
+    hash.ad # undefined method `ad' for {:ad=>"Sıtkı", :soyad=>"Bağdat"}:Hash
 
   ```
 Gördüğümüz gibi maalesef bir bir hash'in keyini method gibi çağırmayı denediğimizde hata alıyoruz.
 
-Bunu hızlıca çözebiliriz.
+Bunu hızlıca Hash sınıfını [Monkey Patch](http://en.wikipedia.org/wiki/Monkey_patch)'leyerek çözebiliriz.
 
   ```ruby
-    require 'ostruct'
-    hash = {ad: 'Serdar', soyad: 'Doğruyol'}
-    hash = OpenStruct.new hash
+    class Hash
+      def method_missing(method_name)
+        self[method_name]
+      end
+    end
+
+    hash = {ad: 'Sıtkı', soyad: 'Bağdat'}
     hash.ad # Serdar
   ```
 
-Artık hash'inizi bir objeymiş gibi kullanabilirsiniz. Özellikle bazı kompleks ActiveRecord query'lerinde
-işinize yaracağından eminim :)
+Bu yöntem OpenStruct kullanmaya göre gayet performanslı ve genel anlamda daha kabul gören bir yol. Öneri için
+Sıtkı'ya tekrar teşekkürler :)
+
+**Dip Not:** Rails gibi bir çok standart sınıfı Monkey Patch'leyen bir framework kullanıyorsanız beklenmedik davranışlarla
+karşılabilirsiniz.
