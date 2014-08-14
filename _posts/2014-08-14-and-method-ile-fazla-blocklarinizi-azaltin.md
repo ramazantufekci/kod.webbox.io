@@ -37,5 +37,5 @@ Tabii ki var :)
 Detaylı olarak baktığımızda **&** ve **:upcase** in biraraya geldiğini görüyoruz.
 Bildiğiniz gibi **&** bir Block'u Proc'a ya da bir Proc'u Block'a çevirmek için kullanılıyor.
 
-**&:upcase** de ise ':upcase' Symbol'ü üzerinde & kullanarak 'to_proc' çağırılıyor ve daha sonra
+**&:upcase** de ise **:upcase** Symbol'ü üzerinde **&** kullanılarak **to_proc** çağırılıyor ve daha sonra
 bu Proc unpack edilip bir block gibi methoda paslanıyor.
