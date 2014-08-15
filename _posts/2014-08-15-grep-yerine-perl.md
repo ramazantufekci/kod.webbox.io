@@ -1,7 +1,7 @@
 ---
 title: Grep Yerine Perl Kullanımı
 layout: post
-tags: []
+tags: [grep,perl]
 date: Aug 15, 2014 23:58
 published: true
 writer:
@@ -15,7 +15,7 @@ oldukça zayıf. Bu nedenle egrep, git-grep, ack ya da ag gibi araçların
 kullanımı son yıllarda yaygınlaştı, ancak bazen daha kapsamlı arama yapmak
 gerekebiliyor.
 
-Bu yazıda perl ile kolayca bir grep alternatifi oluşturacağız:
+Bu yazıda perl ile basit bir grep alternatifi oluşturacağız. 
 
 ````
 grep PATTERN *.py
