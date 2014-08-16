@@ -14,11 +14,11 @@ genel olarak Array ve Enumerable olan objeler ile kullanılan **&:method** yazı
 
 Kısa bir örnekle hemen konuya girelim.
 
-  ```ruby
-    names = %w{Serdar Serkan Seçkin}
+```ruby
+names = %w{Serdar Serkan Seçkin}
 
-    names.map {|name| name.upcase } # ["SERDAR", "SERKAN", "SEÇKIN"]
-  ```
+names.map {|name| name.upcase } # ["SERDAR", "SERKAN", "SEÇKIN"]
+```
 
 Yukarıdaki örnekte 'names' adında bir Array'ın her elemanını map işleminden
 geçirerek ve 'upcase' metodunu kullanarak büyük harfe çeviriyoruz. Fakat bu işlem için
@@ -27,11 +27,12 @@ bir tane explicit Block kullanıyoruz ve aslında Block içinde return etmek dı
 Peki bunu daha **kısa ve öz** şekilde yazmamızın bir yolu yok mu ?
 Tabii ki var :)
 
-  ```ruby
-    names = %w{Serdar Serkan Seçkin}
+```ruby
+names = %w{Serdar Serkan Seçkin}
 
-    names.map(&:upcase) # ["SERDAR", "SERKAN", "SEÇKIN"]
-  ```
+names.map(&:upcase) # ["SERDAR", "SERKAN", "SEÇKIN"]
+```
+
 İlk görüşte büyük bir şaşkınlık uyandırsa da bu metod aslında aynı işi görüyor.
 
 Detaylı olarak baktığımızda **&** ve **:upcase** in biraraya geldiğini görüyoruz.
