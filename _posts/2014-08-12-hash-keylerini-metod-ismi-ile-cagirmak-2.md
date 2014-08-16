@@ -16,26 +16,26 @@ aynı sonucu alabileceğimizi söyledi.
 
 Diyelim ki elinizde bir hash bulunuyor. Ya da sonuç olarak size hash dönen bir metodunuz var.
 
-  ```ruby
-    hash = {ad: 'Sıtkı', soyad: 'Bağdat'}
+```ruby
+hash = {ad: 'Sıtkı', soyad: 'Bağdat'}
 
-    hash.ad # undefined method `ad' for {:ad=>"Sıtkı", :soyad=>"Bağdat"}:Hash
+hash.ad # undefined method `ad' for {:ad=>"Sıtkı", :soyad=>"Bağdat"}:Hash
+```
 
-  ```
 Gördüğümüz gibi maalesef bir bir hash'in keyini method gibi çağırmayı denediğimizde hata alıyoruz.
 
 Bunu hızlıca Hash sınıfını [Monkey Patch](http://en.wikipedia.org/wiki/Monkey_patch)'leyerek çözebiliriz.
 
-  ```ruby
-    class Hash
-      def method_missing(method_name)
-        self[method_name]
-      end
-    end
+```ruby
+class Hash
+  def method_missing(method_name)
+    self[method_name]
+  end
+end
 
-    hash = {ad: 'Sıtkı', soyad: 'Bağdat'}
-    hash.ad # Sıtkı
-  ```
+hash = {ad: 'Sıtkı', soyad: 'Bağdat'}
+hash.ad # Sıtkı
+```
 
 Bu yöntem OpenStruct kullanmaya göre gayet performanslı ve genel anlamda daha kabul gören bir yol. Öneri için
 Sıtkı'ya tekrar teşekkürler :)
