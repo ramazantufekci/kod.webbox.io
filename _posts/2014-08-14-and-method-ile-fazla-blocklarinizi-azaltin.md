@@ -1,5 +1,5 @@
 ---
-title: (&:method) ile fazla Block'larınızı azaltın
+title: (&amp;:method) ile fazla Block'larınızı azaltın
 layout: post
 tags: [ruby]
 date: Aug 14, 2014 19:07
