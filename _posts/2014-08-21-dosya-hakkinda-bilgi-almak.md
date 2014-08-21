@@ -12,8 +12,6 @@ writer:
 File extension’ı `jpg` olan bir dosya jpeg optimizasyonu yapmaya çalışırken
 aldığım hata mesajı yeni bir şey öğrenmeme sebep oldu!
 
-<!--more-->
-
 Hata mesajı:
 
     Not a JPEG file: starts with 0x89 0x50  [ERROR]
