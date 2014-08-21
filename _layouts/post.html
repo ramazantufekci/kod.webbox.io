@@ -6,7 +6,10 @@ layout: default
   <h1>{{ page.title }}</h1>
   <span class="post-date">{{ page.date | localize: "%d %B %Y, %A, %H:%M" }} - <a href="{{ page.writer.www }}">{{ page.writer.full_name }}</a></span>
   {{ content }}
+  
+  <hr/>
   <ul class="tags">
+      <li>Etiketler</li>
       {% for tag in page.tags %}
       <li><a href="/etiket/{{ tag }}/">{{ tag }}</a></li>
       {% endfor %}
