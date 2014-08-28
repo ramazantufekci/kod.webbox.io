@@ -9,8 +9,8 @@ writer:
   www: http://twitter.com/vigobronx
 ---
 
-**Semantik Versiyonlama** yani **Anlanmı Versiyonlama** yazılım geliştirirken
-dikkat edilmesi gereken konulardan birdir. Bu bir kural değildir ama pek çok
+**Semantik Versiyonlama** yani **Anlamlı Versiyonlama** yazılım geliştirirken
+dikkat edilmesi gereken konulardan biridir. Bu bir kural değildir ama pek çok
 geliştirici ve kurum tarafından kabul görmüş bir **metodolojidir**.
 
 GitHub kurucularından [Tom Preston-Werner][0] tarafından hazırlanan spesifikasyonları
