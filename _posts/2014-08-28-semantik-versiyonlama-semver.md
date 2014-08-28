@@ -22,9 +22,9 @@ Ana kural şudur :
 
 ## Major Version
 
-Yani esas ana versiyon. Özellikle geriye dönük desteklemenin olamadığı, çok
+Ana versiyon demektir. Özellikle geriye dönük desteklemenin olamadığı, çok
 büyük değişiklerin olduğu versiyon anlamındadır. Majör versiyonun yükselmesi
-demek, ilgili versiyonda çok ama çok ciddi değişiklerin olduğu anlamına gelir.
+demek, ilgili versiyonda çok ciddi değişiklerin olduğu anlamına gelebilir.
 
 Eğer bu bir **API** ise belki pek çok şey eskiden olduğu gibi çalışamayabilir
 anlamına da gelir.
@@ -60,7 +60,7 @@ Bazı durumlarda **pre-release** bilgisi de eklenebilir. Örneğin;
 Eğer kod/proje artık **production**’da kullanılıyor hale geldiyse versiyon
 numarası en az `1.0.0` olmalıdır.
 
-Özellikle Ruby ve Rubygems konusunda çok önemlidir **SemVer**. Bununla ilgili
+**SemVer** özellikle Ruby ve Rubygems versiyon planlaması konusunda oldukça önemlidir. Bununla ilgili
 olarak [video][2]’yu izleyebilirsiniz.
 
 
