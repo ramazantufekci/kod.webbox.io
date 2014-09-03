@@ -10,7 +10,7 @@ writer:
 ---
 
 Bundle install yaptığınız zaman Bundler sizin hangi Environment'ta olduğunuza bakmaz. Bundan dolayı
-bütün Environment'larda bulunan Gem'leri yüklemeye çalışır. Örnek vericek olursak.
+bütün Environment'larda bulunan Gem'leri yüklemeye çalışır. Örnek verecek olursak.
 
   	source 'https://rubygems.org'
 
@@ -30,12 +30,12 @@ bütün Environment'larda bulunan Gem'leri yüklemeye çalışır. Örnek verice
       gem 'pg'
     end
 
-Yukarıdaki gibi bir Gemfile'ımız olduğunu varsayarsak ve
+Yukarıdaki gibi bir `Gemfile`'ımız olduğunu varsayarsak ve
 
     bundle install
 
 yaparsak. Bundler tüm environmentlar için olan Gem'leri yüklemeye çalışır. Ve eğer
-development yaptığınız makinada pg (Postgresql) yok ise kallavi bir hata fırlatır.
+development yaptığınız makinada `pg` (Postgresql) gem'i yok ise kallavi bir hata fırlatır.
 
 Bunu önlemek için sadece bulunduğumuz geliştirme ortamıyla alakalı gem'leri şu şekilde
 yükleyebiliriz.
