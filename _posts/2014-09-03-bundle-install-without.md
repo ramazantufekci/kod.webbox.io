@@ -12,8 +12,8 @@ writer:
 Bundle install yaptığınız zaman Bundler sizin hangi Environment'ta olduğunuza bakmaz. Bundan dolayı
 bütün Environment'larda bulunan Gem'leri yüklemeye çalışır. Örnek verecek olursak.
 
-  	source 'https://rubygems.org'
-
+  ```ruby
+    source 'https://rubygems.org'
     group :development do
       gem 'capistrano', '2.15.3'
       gem 'rvm-capistrano'
@@ -29,7 +29,8 @@ bütün Environment'larda bulunan Gem'leri yüklemeye çalışır. Örnek verece
       gem 'thin'
       gem 'pg'
     end
-
+  ```
+  
 Yukarıdaki gibi bir `Gemfile`'ımız olduğunu varsayarsak ve
 
     bundle install
