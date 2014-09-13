@@ -2,7 +2,7 @@
 title: USB Disk Eject
 layout: post
 tags: [osx, unmount, usb]
-date: Sep 13, 2014 08:42
+date: Sep 13, 2014 19:43
 published: true
 writer:
   full_name: Uğur Özyılmazel
