@@ -1,7 +1,7 @@
 ---
 title: bundle install --without
 layout: post
-tags: []
+tags: [ruby, bundle]
 date: Sep 03, 2014 16:48
 published: true
 writer:
