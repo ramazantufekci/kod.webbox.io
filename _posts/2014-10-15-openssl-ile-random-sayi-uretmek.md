@@ -9,7 +9,7 @@ writer:
   www: http://twitter.com/vigobronx
 ---
 
-Bazı durumlarda generic şifre, anahtar ve benzeri şeyler üretmeniz gerekebilir.
+Bazı durumlarda jenerik **şifre**, **anahtar** ve benzeri şeyler üretmeniz gerekebilir.
 Bunun için `openssl` kullanabilirsiniz:
 
 ```bash
