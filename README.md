@@ -70,3 +70,4 @@ bir post dosyası. `<!--more-->` üstünde kalan kısım özet olarak anasayfada
 görüntüleniyor.
 
 `tags: [tag1, tag2]` gibi yazdığınız post’u kategoriye ayırabilirsiniz.
+5 yıl
